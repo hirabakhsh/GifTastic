@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     function displayAnimations() {
         var name = $(this).attr("data-name");
-        var getAnimations = $.get("http://api.giphy.com/v1/gifs/search?q=" + name + "&api_key=b3d3b1b7595041b088718a0cc64b8d63&limit=10");
+        var getAnimations = $.get("https://api.giphy.com/v1/gifs/search?q=" + name + "&api_key=b3d3b1b7595041b088718a0cc64b8d63&limit=10");
         getAnimations.done(function(data) {
             calculateMovieInfo(data);
             for (index = 0; index < 10; index++) {
